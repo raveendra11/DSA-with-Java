@@ -1,21 +1,16 @@
 public class ArrayDuplicate {
 
-    int[] rollNumbers = new int[]{101, 102, 100, 104, 107, 106, 107};
-
-    int duplicate = rollNumbers[0];
+    int[] rollNumbers = new int[]{101, 103, 100, 100, 104, 101, 103, 107, 107};
 
     public void findDuplicate() {
 
-        for (int i = 1; i < rollNumbers.length; i++) {
+        for (int i = 0; i < rollNumbers.length; i++) {
 
-            if (duplicate == rollNumbers[i]) {
-                System.out.println(rollNumbers[i]);
-                break;
-            }
-            if (i == rollNumbers.length - 1) {
-                duplicate = rollNumbers[i];
-                i = 0;
+            for (int j = i + 1; j < rollNumbers.length; j++) {
 
+                if (rollNumbers[i] == rollNumbers[j]) {
+                    System.out.println(rollNumbers[i]);
+                }
             }
         }
     }

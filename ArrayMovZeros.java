@@ -1,28 +1,29 @@
+import java.util.Arrays;
+
 public class ArrayMovZeros {
+    public static void moveZeros(int[] arr) {
+        int index = 0; // Pointer for non-zero elements
 
-    int rollNumbers[] = new int[]{100, 101, 0, 0, 0, 200, 0, 0, 104, 105, 102, 0, 103};
-
-    public void doMovZeros() {
-        int nonZeroIndex = 0; // Pointer to place non-zero elements
-
-        // Pass 1: Move non-zero elements forward
-        for (int i = 0; i < rollNumbers.length; i++) {
-            if (rollNumbers[i] != 0) {
-                int temp = rollNumbers[i];
-                rollNumbers[i] = rollNumbers[nonZeroIndex];
-                rollNumbers[nonZeroIndex] = temp;
-                nonZeroIndex++;
+        // First loop: Move non-zero elements forward
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                arr[index] = arr[i];
+                index++;
             }
         }
 
-        // Print the modified array
-        for (int x : rollNumbers) {
-            System.out.print(x + " ");
+        // Second loop: Fill remaining positions with zeros
+        for (int i = index; i < arr.length; i++) {
+            arr[i] = 0;
         }
     }
 
     public static void main(String[] args) {
-        ArrayMovZeros amz = new ArrayMovZeros();
-        amz.doMovZeros();
+        int[] arr = {1,0,2,0,0,9,1,0};
+        System.out.println("Original Array: " + Arrays.toString(arr));
+
+        moveZeros(arr);
+
+        System.out.println("Modified Array: " + Arrays.toString(arr));
     }
 }

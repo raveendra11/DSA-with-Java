@@ -7,17 +7,15 @@ public class ArrayCopy {
     public void doCopy() {
 
         for (int i = 0; i < rollNumbers.length; i++) {
-            for (int j = i; j < newRollNumbers.length; j++) {
-                newRollNumbers[j] = rollNumbers[i];
 
-            }
+            newRollNumbers[i] = rollNumbers[i];
 
         }
+
 
         for (int k : newRollNumbers) {
             System.out.println(k);
         }
-
 
     }
 

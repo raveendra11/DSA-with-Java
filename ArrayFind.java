@@ -3,24 +3,24 @@ public class ArrayFind {
 
     int find_element = 109;
 
-    public boolean findElement() {
+    public int findElement() {
         for (int i = 0; i < rollNumbers.length; i++) {
             if (rollNumbers[i] == find_element) {
-                return true;
+                return i;
             }
 
         }
-        return false;
+        return -1;
 
     }
 
     public static void main(String[] args) {
 
         ArrayFind arf = new ArrayFind();
-        if (arf.findElement()) {
-            System.out.println("Element exists");
-        } else {
+        if (arf.findElement()==-1) {
             System.out.println("Element not found.");
+        } else {
+            System.out.println("Element exists");
         }
 
     }

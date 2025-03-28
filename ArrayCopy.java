@@ -12,13 +12,10 @@ public class ArrayCopy {
 
         }
 
-
         for (int k : newRollNumbers) {
             System.out.println(k);
         }
-
     }
-
 
     public static void main(String[] args) {
 

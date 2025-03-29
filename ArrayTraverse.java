@@ -8,6 +8,10 @@ public class ArrayTraverse {
             System.out.println(rollNumbers[i]);
 
         }
+
+        for (int x : rollNumbers) {
+            System.out.println(x);
+        }
     }
 
     public static void main(String[] args) {

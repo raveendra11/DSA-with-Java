@@ -4,8 +4,8 @@ public class ArrayAverage {
     int total;
 
     public void doAverage() {
-        for (int i = 0; i < marks.length; i++) {
-            total = marks[i] + total;
+        for (int i : marks) {
+            total = i + total;
         }
         System.out.println(total / marks.length);
     }

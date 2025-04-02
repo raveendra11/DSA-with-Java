@@ -1,6 +1,6 @@
 public class ArraySort {
 
-    int[] rollNumbers = new int[]{100, 102, 101, 103, 105, 104};
+    int[] rollNumbers = new int[]{8,5,7,3,2};
 
     public void doSort() {
         for (int i = 0; i < rollNumbers.length - 1; i++) {

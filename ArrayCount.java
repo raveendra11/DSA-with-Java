@@ -6,13 +6,13 @@ public class ArrayCount {
 
     public void doCountEvenOdd() {
 
-        for (int i = 0; i < rollNumbers.length; i++) {
+        for (int i : rollNumbers) {
 
-            if (rollNumbers[i] % 2 == 0)
+            if (i % 2 == 0)
                 countEven = countEven + 1;
-            else {
+            else
                 countOdd = countOdd + 1;
-            }
+
 
         }
         System.out.println("Even Numbers Count " + countEven);

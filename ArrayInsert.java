@@ -13,8 +13,9 @@ public class ArrayInsert {
     }
 
     public void doTraverse() {
-        for (int i = 0; i < rollNumbers.length; i++) {
-            System.out.print(" " + rollNumbers[i]);
+        System.out.println("Array after insertion :");
+        for (int j:rollNumbers) {
+            System.out.println(j);
         }
     }
 
@@ -22,7 +23,6 @@ public class ArrayInsert {
 
         ArrayInsert ari = new ArrayInsert();
         ari.doInsert();
-        System.out.println("Array after insertion :");
         ari.doTraverse();
 
     }

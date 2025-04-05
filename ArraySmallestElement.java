@@ -6,9 +6,9 @@ public class ArraySmallestElement {
 
     public void findSmallest() {
 
-        for (int i = 1; i < marks.length; i++) {
-            if (marks[i] < min) {
-                min = marks[i];
+        for (int i : marks) {
+            if (i < min) {
+                min = i;
             }
         }
         System.out.println(min);

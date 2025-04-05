@@ -8,9 +8,9 @@ public class ArraySecondMinimum {
 
     public void findSecondMinimum() {
 
-        for (int i = 0; i < marks.length; i++) {
-            if (min > marks[i]) {
-                min = marks[i];
+        for (int i : marks) {
+            if (min > i) {
+                min = i;
 
             }
         }

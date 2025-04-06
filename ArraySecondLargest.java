@@ -7,10 +7,10 @@ public class ArraySecondLargest {
 
         int max = rollNumbers[0];
 
-        for (int i = 0; i < rollNumbers.length; i++) {
+        for (int i : rollNumbers) {
 
-            if (max < rollNumbers[i]) {
-                max = rollNumbers[i];
+            if (max < i) {
+                max = i;
             }
         }
         System.out.println(max);

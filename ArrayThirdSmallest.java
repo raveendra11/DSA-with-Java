@@ -8,9 +8,9 @@ public class ArrayThirdSmallest {
 
     public void findThirdSmallest() {
 
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < smallest) {
-                smallest = numbers[i];
+        for (int i : numbers) {
+            if (i < smallest) {
+                smallest = i;
             }
         }
 

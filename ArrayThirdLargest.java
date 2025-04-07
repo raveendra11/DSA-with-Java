@@ -9,9 +9,9 @@ public class ArrayThirdLargest {
     int thirdlargest = numbers[0];
 
     public void findThirdLargest() {
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] > largest) {
-                largest = numbers[i];
+        for (int i : numbers) {
+            if (i > largest) {
+                largest = i;
             }
         }
 

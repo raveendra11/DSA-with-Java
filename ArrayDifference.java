@@ -8,21 +8,20 @@ public class ArrayDifference {
 
     public void findMax() {
 
-        for (int i = 0; i < rollNumbers.length; i++) {
-            if (max < rollNumbers[i]) {
-                max = rollNumbers[i];
+        for (int i : rollNumbers) {
+            if (max < i) {
+                max = i;
             }
         }
         System.out.println(max);
-
 
     }
 
     public void findMin() {
 
-        for (int i = 0; i < rollNumbers.length; i++) {
-            if (min > rollNumbers[i]) {
-                min = rollNumbers[i];
+        for (int i : rollNumbers) {
+            if (min > i) {
+                min = i;
             }
         }
         System.out.println(min);

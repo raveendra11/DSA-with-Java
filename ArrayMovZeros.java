@@ -5,9 +5,9 @@ public class ArrayMovZeros {
         int index = 0; // Pointer for non-zero elements
 
         // First loop: Move non-zero elements forward
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != 0) {
-                arr[index] = arr[i];
+        for (int i : arr) {
+            if (i != 0) {
+                arr[index] = i;
                 index++;
             }
         }
@@ -19,7 +19,7 @@ public class ArrayMovZeros {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,0,2,0,0,9,1,0};
+        int[] arr = {1,0,2,0,0,9,1,0,10,1,2,3,1,0,3,45};
         System.out.println("Original Array: " + Arrays.toString(arr));
 
         moveZeros(arr);

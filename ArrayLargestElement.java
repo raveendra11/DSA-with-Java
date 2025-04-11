@@ -6,9 +6,9 @@ public class ArrayLargestElement {
 
     public void findLargest() {
 
-        for (int i = 1; i < marks.length; i++) {
-            if (max < marks[i]) {
-                max = marks[i];
+        for (int i : marks) {
+            if (max < i) {
+                max = i;
             }
         }
         System.out.println(max);

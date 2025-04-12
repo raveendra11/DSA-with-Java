@@ -12,7 +12,7 @@ public class ArrayDelete {
         int input = sc.nextInt();
 
 
-        for (int i = 0; i < rollNumbers.length; i++) {
+        for (int i=0;i<rollNumbers.length;i++) {
 
             if (rollNumbers[i] == input) {
                 rollNumbers[i] = 0;

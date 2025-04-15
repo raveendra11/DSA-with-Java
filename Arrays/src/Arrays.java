@@ -25,7 +25,5 @@ public class Arrays {
         for(int i : rollNum){
             System.out.println(i);
         }
-
-
     }
 }

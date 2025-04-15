@@ -21,6 +21,11 @@ public class Arrays {
         // Declare,Initialize, and Assign
         int[] rollNum = {101, 102, 103, 104, 105};
 
+        // Looping
+        for(int i : rollNum){
+            System.out.println(i);
+        }
+
 
     }
 }

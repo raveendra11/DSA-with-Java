@@ -12,8 +12,8 @@ public class ArrayRotateLeft {
         }
         rollNumbers[rollNumbers.length - 1] = temp;
 
-        for (int k = 0; k < rollNumbers.length; k++) {
-            System.out.println(rollNumbers[k]);
+        for (int k : rollNumbers) {
+            System.out.println(k);
         }
 
     }

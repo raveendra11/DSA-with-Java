@@ -17,8 +17,8 @@ public class ArrayRotateRight {
 
         rollNumbers[0] = temp;
 
-        for (int j = 0; j < rollNumbers.length; j++) {
-            System.out.println(rollNumbers[j]);
+        for (int j : rollNumbers) {
+            System.out.println(j);
         }
 
     }
